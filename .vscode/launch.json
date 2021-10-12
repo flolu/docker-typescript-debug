@@ -1,0 +1,35 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "App1",
+      "protocol": "inspector",
+      "address": "0.0.0.0",
+      "port": 9229,
+      "restart": true,
+      "sourceMaps": true,
+      "localRoot": "${workspaceFolder}",
+      "remoteRoot": "/",
+      "sourceMapPathOverrides": {
+        "/*": "${workspaceFolder}/*"
+      }
+    },
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "App2",
+      "protocol": "inspector",
+      "address": "0.0.0.0",
+      "port": 9230,
+      "restart": true,
+      "sourceMaps": true,
+      "localRoot": "${workspaceFolder}",
+      "remoteRoot": "/",
+      "sourceMapPathOverrides": {
+        "/*": "${workspaceFolder}/*"
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "watch": ["app1.ts", "app2.ts", "lib1.ts"],
+  "ext": "ts",
+  "ignore": [".git", "node_modules/**/node_modules"],
+  "execMap": {
+    "ts": "node --require ts-node/register -r tsconfig-paths/register"
+  }
+}

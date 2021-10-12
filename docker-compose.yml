@@ -1,0 +1,29 @@
+version: '3'
+services:
+  app1:
+    image: node:14
+    volumes:
+      - ./node_modules:/node_modules
+      - ./package.json:/package.json
+      - ./nodemon.json:/nodemon.json
+      - ./tsconfig.json:/tsconfig.json
+      - ./app1.ts:/app1.ts
+      - ./lib1.ts:/lib1.ts
+    ports:
+      - 3000:3000
+      - 9229:9229
+    command: yarn nodemon --signal SIGINT --inspect=0.0.0.0:9229 --nolazy app1.ts
+
+  app2:
+    image: node:14
+    volumes:
+      - ./node_modules:/node_modules
+      - ./package.json:/package.json
+      - ./nodemon.json:/nodemon.json
+      - ./tsconfig.json:/tsconfig.json
+      - ./app2.ts:/app2.ts
+      - ./lib1.ts:/lib1.ts
+    ports:
+      - 3001:3000
+      - 9230:9229
+    command: yarn nodemon --signal SIGINT --inspect=0.0.0.0:9229 --nolazy app2.ts

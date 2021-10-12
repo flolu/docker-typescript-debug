@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "strict": true,
+    "esModuleInterop": true,
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "@lib1": ["./lib1"]
+    }
+  }
+}
