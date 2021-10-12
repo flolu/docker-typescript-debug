@@ -5,15 +5,20 @@
   <br>
   <h1>Docker Typescript Debugging</h1>
   <p>Example for Debugging Node.js + Typescript Running inside Docker Containers with Hot Reload</p>
-  <!-- <a href="https://youtu.be/XXX">
-    <img width="320px" height="180px" src="https://img.youtube.com/vi/XXX/mqdefault.jpg" style="border-radius: 1rem;" />
-    <p>Watch the YouTube Tutorial</p>
-  </a> -->
 </div>
+
+# Features
+
+- Node.js + TypeScript app
+- Runs in Docker container
+- With hot reload
+- Ability to debug with VSCode
+- Multiple applications
+- A shared library
 
 # Usage
 
-**Recommended OS**: Ubuntu 20.04 LTS
+**Recommended OS**: Linux
 
 **Requirements**: Yarn, Docker, Docker Compose
 
@@ -24,11 +29,17 @@
 **Development**
 
 - `make dev` or `yarn dev` (Start development backend services, http://localhost:3000)
-- `Ctrl+F5` (Choose which container to debug)
+- `Ctrl+F5` (Start debugging and choose which container to debug)
 
 # Codebase
 
+- [`app1.ts`](app1.ts) simple Node.js server
+- [`app2.ts`](app2.ts) another simple Node.js server
+
+# Important files
+
 - [`docker-compose.yml`](docker-compose.yml) backend development environment
+- [`package.json`](package.json) contains nodemon configuration for hot reload
 - [`.vscode/launch.json`](.vscode/launch.json) launch configuration for debuggers
 
 # Credits
