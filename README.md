@@ -5,6 +5,10 @@
   <br>
   <h1>Docker Typescript Debugging</h1>
   <p>Example for Debugging Node.js + Typescript Running inside Docker Containers with Hot Reload</p>
+  <a href="https://youtu.be/1WUoITRINf0">
+    <img width="320px" height="180px" src="https://img.youtube.com/vi/1WUoITRINf0/mqdefault.jpg" style="border-radius: 1rem;" />
+    <p>Watch the YouTube Tutorial</p>
+  </a>
 </div>
 
 # Features
