@@ -10,5 +10,5 @@ RUN npm install
 EXPOSE 3000
 EXPOSE 9229
 
-# Run our app supposing the source is in /code directory
+# Run our app supposing the source is in / directory
 CMD yarn nodemon --signal SIGINT --inspect=0.0.0.0:9229 --nolazy /app1.ts
