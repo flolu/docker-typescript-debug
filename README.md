@@ -24,15 +24,11 @@
 
 **Recommended OS**: Linux
 
-**Requirements**: Yarn, Docker, Docker Compose
-
-**Setup**
-
-- `yarn install`
+**Requirements**: Docker, Docker Compose, Visual Studio Code (Optional, for debugging)
 
 **Development**
 
-- `make dev` or `yarn dev` (Start development backend services, http://localhost:3000)
+- `make dev` (Start development backend services, http://localhost:3000 and http://localhost:3001)
 - `Ctrl+F5` (Start debugging and choose which container to debug)
 
 # Codebase
